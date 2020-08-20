@@ -18,12 +18,3 @@ class DropColumns(BaseEstimator, TransformerMixin):
         # Retornamos um novo dataframe sem as colunas indesejadas
         return data.drop(labels=self.columns, axis='columns')
 
-    
-    
-class ScaleFeatures():
-    def __init__(self, X: pd.DataFrame):
-        self.X = X
-        
-    def scale_features(self) -> np.array: 
-        return preprocessing.scale(self.X)
-    
