@@ -24,6 +24,6 @@ class ScaleFeatures():
     def __init__(self, X: pd.DataFrame):
         self.X = X
         
-    def scale_features(self): -> np.array
+    def scale_features(self) -> np.array: 
         return preprocessing.scale(self.X)
     
